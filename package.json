@@ -1,0 +1,15 @@
+{
+  "name": "ios14-customize-star-trek",
+  "version": "1.0.0",
+  "description": "Support files for iPhone 12 mini customize as Star Trek",
+  "main": "icon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fransjo Leihitu",
+  "license": "ISC",
+  "dependencies": {
+    "gm": "^1.23.1",
+    "imagemagick": "^0.1.3"
+  }
+}
