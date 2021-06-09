@@ -1,22 +1,16 @@
 var fs = require('fs')
     , gm = require('gm').subClass({ imageMagick: true });
 
-const WIDTH = 257;
-const HEIGHT = WIDTH;
 
+// export path, make sure it exists
+const EXPORT_PATH = "export/";
+
+// Add your words here to display in the icon
 const WORDS = [
-    "SCAN",
-    "CONFIG",
-    "MUSIC",
-    "MARKET",
-    "CALC",
-    "PAY",
-    "SHUTTLE",
-    "PODS",
-    "ISA",
-    "MAIL"
+    "HAIL"
 ];
 
+// Add your colors, which will be used as backgroundcolors
 const COLORS = [
     "#46AAB3",
     "#EFB543",
@@ -29,6 +23,9 @@ const COLORS = [
 
 const ASSETS_FOLDER = "assets";
 const FONT = "Okuda.otf";
+
+const WIDTH = 257;
+const HEIGHT = WIDTH;
 
 for(var x = 0 ;x < WORDS.length;x++) {
    var _word    =  WORDS[x];
@@ -46,7 +43,7 @@ for(var x = 0 ;x < WORDS.length;x++) {
        .stroke("#000000")
        .strokeWidth(7)
        .drawLine(0,172,WIDTH,172)
-           .write(`export/${_word.toLowerCase()}_${i+1}.png`, function (err) {
+           .write(`${EXPORT_PATH}${_word.toLowerCase()}_${i+1}.png`, function (err) {
                if (err) {
                    console.log(err);
                }
