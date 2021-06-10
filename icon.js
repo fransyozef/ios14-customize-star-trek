@@ -40,7 +40,7 @@ const COLORS = [
 ];
 if(COLORS.length === 0) { console.log("|   | Enable to comply: no colors parameters given!"); }
 
-const ASSETS_FOLDER = "assets";
+const ASSETS_FOLDER = "assets/";
 const FONT = "Okuda.otf";
 
 const WIDTH = 257;
